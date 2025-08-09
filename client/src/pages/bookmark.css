@@ -1,0 +1,108 @@
+/* Add to d:\linksaver\client\src\pages\bookmark.css */
+.container {
+  margin: 0 auto;
+  padding: 32px 0 0 0;
+  max-width: 900px;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #ff6666;
+  margin-bottom: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.empty {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.addBtn {
+  background: #ff8888;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.addBtn:hover {
+  background: #ff4444;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px 32px; /* More space between cards */
+  margin-top: 24px;
+}
+
+.card {
+  background: #fff0f0;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(255, 136, 136, 0.08);
+  padding: 20px 18px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: box-shadow 0.2s;
+  min-width: 0;
+}
+
+.card:hover {
+  box-shadow: 0 4px 24px rgba(255, 136, 136, 0.18);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.favicon {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid #eee;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ff6666;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.summaryCard {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(255, 136, 136, 0.10);
+  padding: 12px 14px;
+  margin: 10px 0 18px 0;
+  color: #444;
+  font-size: 0.98rem;
+  min-height: 40px;
+}
+
+.deleteBtn {
+  align-self: flex-end;
+  background: #ff8888;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 0.98rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.deleteBtn:hover {
+  background: #ff4444;
+}
